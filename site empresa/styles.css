@@ -1,0 +1,201 @@
+/* Estilos Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    color: #3a9d23;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+/* Cabeçalho */
+.main-header {
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.menu li a:hover {
+    color: #3a9d23;
+}
+
+/* Banner de Páginas Internas */
+.page-banner {
+    background-color: #3a9d23;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.page-banner h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+/* Estilo para sessões principais */
+section {
+    padding: 50px 0;
+}
+
+.about-content, .services-content, .sustainability-content, .contact-content {
+    text-align: center;
+}
+
+.about-content h2, .services-content h2, .sustainability-content h2, .contact-content h2 {
+    margin-bottom: 30px;
+}
+
+.about-content p, .services-content p, .sustainability-content p, .contact-content p {
+    font-size: 1.1em;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+/* Serviço - Cartões */
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-card {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.service-card h3 {
+    font-size: 1.5em;
+    color: #3a9d23;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Listas */
+.about-content ul, .sustainability-content ul {
+    list-style-type: disc;
+    text-align: left;
+    max-width: 800px;
+    margin: 20px auto;
+    color: #666;
+}
+
+.about-content ul li, .sustainability-content ul li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    font-size: 1.1em;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 0.9em;
+    margin: 5px 0;
+}
+
+footer a {
+    color: #3a9d23;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Botão no Banner */
+.banner button, .page-banner button {
+    background-color: #3a9d23;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 1em;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.banner button:hover, .page-banner button:hover {
+    background-color: #2c7c1a;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-cards {
+        flex-direction: column;
+    }
+
+    .service-card {
+        width: 100%;
+    }
+}
